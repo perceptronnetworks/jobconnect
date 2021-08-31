@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package spark_custom_theme
+ * @package jobconnect_custom_theme
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses spark_custom_theme_header_style()
+ * @uses jobconnect_custom_theme_header_style()
  */
-function spark_custom_theme_custom_header_setup() {
+function jobconnect_custom_theme_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'spark_custom_theme_custom_header_args',
+			'jobconnect_custom_theme_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'spark_custom_theme_header_style',
+				'wp-head-callback'   => 'jobconnect_custom_theme_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'spark_custom_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'jobconnect_custom_theme_custom_header_setup' );
 
-if ( ! function_exists( 'spark_custom_theme_header_style' ) ) :
+if ( ! function_exists( 'jobconnect_custom_theme_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see spark_custom_theme_custom_header_setup().
+	 * @see jobconnect_custom_theme_custom_header_setup().
 	 */
-	function spark_custom_theme_header_style() {
+	function jobconnect_custom_theme_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

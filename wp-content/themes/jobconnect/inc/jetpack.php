@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package spark_custom_theme
+ * @package jobconnect_custom_theme
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function spark_custom_theme_jetpack_setup() {
+function jobconnect_custom_theme_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'spark_custom_theme_infinite_scroll_render',
+			'render'    => 'jobconnect_custom_theme_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function spark_custom_theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'spark-custom-theme-style',
+				'stylesheet' => 'jobconnect-custom-theme-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function spark_custom_theme_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'spark_custom_theme_jetpack_setup' );
+add_action( 'after_setup_theme', 'jobconnect_custom_theme_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function spark_custom_theme_infinite_scroll_render() {
+function jobconnect_custom_theme_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
