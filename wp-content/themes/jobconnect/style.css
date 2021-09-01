@@ -970,3 +970,7 @@ textarea {
 .menu-primary-menu-container{
 	display: contents;
 }
+
+.custom-logo{
+	width:160px;
+}
