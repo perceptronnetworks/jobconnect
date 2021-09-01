@@ -6,9 +6,6 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 <body>
-<!-- ***** Header Area Start ***** -->
-
-<!-- ***** Header Area End ***** -->
 
 <!-- ***** Main Banner Area Start ***** -->
 <?php
