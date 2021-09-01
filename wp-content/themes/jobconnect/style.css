@@ -970,6 +970,9 @@ textarea {
 .menu-primary-menu-container{
 	display: contents;
 }
+footer {
+    padding: 0px 0px;
+}
 
 .custom-logo{
 	width:160px;
