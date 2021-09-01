@@ -11,266 +11,241 @@ get_header();
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Main Banner Area Start ***** -->
+<?php
+  if( have_rows('slider') ):
+    while( have_rows('slider') ): the_row();
+      $background_video = get_sub_field('background_video');
+      $title = get_sub_field('title');
+      $sub_title = get_sub_field('sub_title');
+      $contact_button_label = get_sub_field('contact_button_label');
+      $contact_button_link = get_sub_field('contact_button_link');
+?>
 <div class="main-banner" id="top">
     <video autoplay muted loop id="bg-video">
-        <source src="resources/assets/src/images/video.mp4" type="video/mp4" />
+        <source src="<?php echo $background_video; ?>" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text">
         <div class="caption">
-            <h6>Lorem ipsum dolor sit amet</h6>
-            <h2>Find the perfect <em>Job</em></h2>
+            <h6><?php echo $title; ?></h6>
+            <h2><?php echo $sub_title; ?></h2>
             <div class="main-button">
-                <a href="contact.html">Contact Us</a>
+                <a href="<?php echo $contact_button_link; ?>"><?php echo $contact_button_label; ?></a>
             </div>
         </div>
     </div>
 </div>
+<?php
+  endwhile;
+  endif;
+?>
 <!-- ***** Main Banner Area End ***** -->
 
 <!-- ***** Cars Starts ***** -->
+<?php
+  if( have_rows('featured_jobs') ):
+    while( have_rows('featured_jobs') ): the_row();
+      $title = get_sub_field('title');
+      $separator_image = get_sub_field('separator_image');
+      $description = get_sub_field('description');
+      $job_image_1 = get_sub_field('job_image_1');
+      $job_department_1 = get_sub_field('job_department_1');
+      $job_title_1 = get_sub_field('job_title_1');
+      $job_qualification_1 = get_sub_field('job_qualification_1');
+      $job_content_1 = get_sub_field('job_content_1');
+      $job_image_2 = get_sub_field('job_image_2');
+      $job_company_2 = get_sub_field('job_company_2');
+      $job_title_2 = get_sub_field('job_title_2');
+      $job_qualification_2 = get_sub_field('job_qualification_2');
+      $job_content_2 = get_sub_field('job_content_2');
+  
+     
+      
+?>
 <section class="section" id="trainers">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading">
-                    <h2>Featured <em>Jobs</em></h2>
-                    <img src="assets/images/line-dec.png" alt="">
-                    <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                    <h2><?php echo $title; ?></h2>
+                    <img src="<?php echo $separator_image; ?>" alt="">
+                    <p><?php echo $description; ?></p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="trainer-item">
                     <div class="image-thumb">
-                        <img src="assets/images/product-1-720x480.jpg" alt="">
+                        <img src="<?php echo $job_image_1; ?>" alt="">
                     </div>
                     <div class="down-content">
-                        <span> <sup>$</sup>70 000 </span>
+                     <span></span>
+                     <h4><?php echo $job_department_1; ?></h4>
+                        <h6 style="margin-bottom: 10px;"><?php echo $job_title_1; ?></h6>
+                        <p><?php echo $job_qualification_1 ?></p>
+                        <p><?php echo $job_content_1 ?></p>
 
-                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                        <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                        <ul class="social-icons">
+                        <!-- <ul class="social-icons">
                             <li><a href="job-details.html">+ View More</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="trainer-item">
                     <div class="image-thumb">
-                        <img src="assets/images/product-2-720x480.jpg" alt="">
+                        <img src="<?php echo $job_image_2; ?>" alt="">
                     </div>
                     <div class="down-content">
-                        <span> <sup>$</sup>70 000 </span>
+                        <span></span>
+                        <h4><?php echo $job_company_2; ?></h4>
+                        <h6 style="margin-bottom: 10px;"><?php echo $job_title_2; ?></h6>
+                        <p><?php echo $job_qualification_2 ?></p>
+                        <p><?php echo $job_content_2 ?></p>
 
-                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                        <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                        <ul class="social-icons">
+                        <!-- <ul class="social-icons">
                             <li><a href="job-details.html">+ View More</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="trainer-item">
-                    <div class="image-thumb">
-                        <img src="assets/images/product-3-720x480.jpg" alt="">
-                    </div>
-                    <div class="down-content">
-                        <span> <sup>$</sup>70 000 </span>
-
-                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-
-                        <p>Medical &nbsp;/&nbsp; Health Jobs</p>
-
-                        <ul class="social-icons">
-                            <li><a href="job-details.html">+ View More</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
         </div>
-
         <br>
-
         <div class="main-button text-center">
-            <a href="jobs.html">View Jobs</a>
+            <!-- <a href="jobs.html">View Jobs</a> -->
         </div>
     </div>
 </section>
+<?php
+  endwhile;
+  endif;
+?>
 <!-- ***** Cars Ends ***** -->
 
-<section class="section section-bg" id="schedule" style="background-image: url(assets/images/about-fullscreen-1-1920x700.jpg)">
+<?php
+  if( have_rows('about_us_section') ):
+    while( have_rows('about_us_section') ): the_row();
+      $section_background = get_sub_field('section_background');
+      $title = get_sub_field('title');
+      $separator_image = get_sub_field('separator_image');
+      $paragraph_text = get_sub_field('paragraph_text');
+      $about_text = get_sub_field('about_text');
+    
+?>
+<section class="section section-bg" id="schedule" style="background-image: url('<?php echo $section_background; ?>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading dark-bg">
-                    <h2>Read <em>About Us</em></h2>
-                    <img src="assets/images/line-dec.png" alt="">
-                    <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                    <h2><?php echo $title; ?></h2>
+                    <img src="<?php echo $separator_image; ?>" alt="">
+                    <p><?php echo $paragraph_text; ?></p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="cta-content text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore deleniti voluptas enim! Provident consectetur id earum ducimus facilis, aspernatur hic, alias, harum rerum velit voluptas, voluptate enim! Eos, sunt, quidem.</p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla quo cum officia laboriosam. Amet tempore, aliquid quia eius commodi, doloremque omnis delectus laudantium dolor reiciendis non nulla! Doloremque maxime quo eum in culpa mollitia similique eius doloribus voluptatem facilis! Voluptatibus, eligendi, illum. Distinctio, non!</p>
+                    <p><?php echo $about_text; ?></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<?php
+  endwhile;
+  endif;
+?>
 
 <!-- ***** Blog Start ***** -->
+<?php
+  if( have_rows('mission_and_vision_section') ):
+    while( have_rows('mission_and_vision_section') ): the_row();
+      $title = get_sub_field('title');
+      $separator_image = get_sub_field('separator_image');
+      $mission_image = get_sub_field('mission_image');
+      $mission_title = get_sub_field('mission_title');
+      $mission_content = get_sub_field('mission_content');
+      $vision_image = get_sub_field('vision_image');
+      $vision_title = get_sub_field('vision_title');
+      $vision_content = get_sub_field('vision_content');
+?>
 <section class="section" id="our-classes">
     <div class="container">
-        <div class="row">
+    <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading">
-                    <h2>Read our <em>Blog</em></h2>
-                    <img src="assets/images/line-dec.png" alt="">
-                    <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                <h2><?php echo $title; ?></h2>
+                <img src="<?php echo $separator_image; ?>" alt="">
                 </div>
             </div>
         </div>
-        <div class="row" id="tabs">
-          <div class="col-lg-4">
-            <ul>
-              <li><a href='#tabs-1'>Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
-              <li><a href='#tabs-2'>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</a></li>
-              <li><a href='#tabs-3'>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</a></li>
-              <div class="main-rounded-button"><a href="blog.html">Read More</a></div>
-            </ul>
-          </div>
-          <div class="col-lg-8">
-            <section class='tabs-content'>
-              <article id='tabs-1'>
-                <img src="assets/images/blog-image-1-940x460.jpg" alt="">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-
-                <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-
-                <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
-                <div class="main-button">
-                    <a href="blog-details.html">Continue Reading</a>
-                </div>
-              </article>
-              <article id='tabs-2'>
-                <img src="assets/images/blog-image-2-940x460.jpg" alt="">
-                <h4>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</h4>
-                <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-                <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <div class="main-button">
-                    <a href="blog-details.html">Continue Reading</a>
-                </div>
-              </article>
-              <article id='tabs-3'>
-                <img src="assets/images/blog-image-3-940x460.jpg" alt="">
-                <h4>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</h4>
-                <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
-                <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
-                <div class="main-button">
-                    <a href="blog-details.html">Continue Reading</a>
-                </div>
-              </article>
-            </section>
-          </div>
-        </div>
-    </div>
-</section>
-<!-- ***** Blog End ***** -->
-
-<!-- ***** Call to Action Start ***** -->
-<section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
-    <div class="container">
+    
         <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="cta-content">
-                    <h2>Send us a <em>message</em></h2>
-                    <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                    <div class="main-button">
-                        <a href="contact.html">Contact us</a>
+            <div class="col-lg-6 featured_section" style="display:grid;">
+                <div class="content" style="display:flex;">
+                    <div class="left-icon" style="margin-right:30px;">
+                        <img width="70px" src="<?php echo $mission_image; ?>" alt="fourth muscle">
+                    </div>
+                    <div class="right-content">
+                        <h2><?php echo $mission_title; ?></h2>
+                        <p><?php echo $mission_content; ?></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 featured_section" style="display:grid;">
+                <div class="content" style="display:flex;">
+                  <div class="left-icon" style="margin-right:30px;">          
+                        <img width="70px" src="<?php echo $vision_image; ?>" alt="fourth muscle">
+                    </div>
+                    <div class="right-content">
+                        <h2><?php echo $vision_title; ?></h2>
+                        <p><?php echo $vision_content; ?></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- ***** Call to Action End ***** -->
+<?php
+  endwhile;
+  endif;
+?>
 
-<!-- ***** Testimonials Item Start ***** -->
-<section class="section" id="features">
+<!-- ***** Blog End ***** -->
+
+<?php
+  if( have_rows('contact_message_section') ):
+    while( have_rows('contact_message_section') ): the_row();
+      $section_background = get_sub_field('section_background');
+      $title = get_sub_field('title');
+      $description = get_sub_field('description');
+      $button_label = get_sub_field('button_label');
+      $button_link = get_sub_field('button_link');
+    
+?>
+<!-- ***** Call to Action Start ***** -->
+<section class="section section-bg" id="call-to-action" style="background-image: url(<?php echo $section_background; ?>)">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading">
-                    <h2>Read our <em>Testimonials</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem incidunt alias minima tenetur nemo necessitatibus?</p>
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cta-content">
+                    <h2><?php echo $title; ?></h2>
+                    <p><?php echo $description; ?></p>
+                    <div class="main-button">
+                        <a href="<?php echo $button_link; ?>"><?php echo $button_label; ?></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <ul class="features-items">
-                    <li class="feature-item">
-                        <div class="left-icon">
-                            <img src="assets/images/features-first-icon.png" alt="First One">
-                        </div>
-                        <div class="right-content">
-                            <h4>John Doe</h4>
-                            <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                        </div>
-                    </li>
-                    <li class="feature-item">
-                        <div class="left-icon">
-                            <img src="assets/images/features-first-icon.png" alt="second one">
-                        </div>
-                        <div class="right-content">
-                            <h4>John Doe</h4>
-                            <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <ul class="features-items">
-                    <li class="feature-item">
-                        <div class="left-icon">
-                            <img src="assets/images/features-first-icon.png" alt="fourth muscle">
-                        </div>
-                        <div class="right-content">
-                            <h4>John Doe</h4>
-                            <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                        </div>
-                    </li>
-                    <li class="feature-item">
-                        <div class="left-icon">
-                            <img src="assets/images/features-first-icon.png" alt="training fifth">
-                        </div>
-                        <div class="right-content">
-                            <h4>John Doe</h4>
-                            <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="main-button text-center">
-            <a href="testimonials.html">Read More</a>
         </div>
     </div>
 </section>
-<!-- ***** Testimonials Item End ***** -->
+<?php
+  endwhile;
+  endif;
+?>
+<!-- ***** Call to Action End ***** -->
 
 </body>
 </main><!-- #main -->
