@@ -38,7 +38,7 @@ get_header();
                         <i class="fa fa-phone"></i>
                     </div>
 
-                    <h5><a href="#">+918310034946</a></h5>
+                    <h5><a href="tel:+918310034946">+918310034946</a></h5>
 
                     <br>
                 </div>
@@ -48,7 +48,7 @@ get_header();
                         <i class="fa fa-envelope"></i>
                     </div>
 
-                    <h5><a href="#">info@internationjobconnect.com</a></h5>
+                    <h5><a href="mailto:info@internationjobconnect.com">info@internationjobconnect.com</a></h5>
 
                     <br>
                 </div>
