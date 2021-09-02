@@ -980,3 +980,10 @@ footer {
 #trainers .col-lg-6{
 display: grid !important;
 }
+
+.contact-form iframe .freebirdFormviewerViewEmbedded 
+.freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent {
+    margin: auto;
+    max-width: 90vw;
+    width: 100% !important;
+}

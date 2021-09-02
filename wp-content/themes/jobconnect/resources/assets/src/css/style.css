@@ -971,6 +971,7 @@ contact
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 0px !important;
 }
 
 #contact-us .contact-form #contact {
