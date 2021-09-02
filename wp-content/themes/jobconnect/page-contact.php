@@ -55,7 +55,7 @@ get_header();
 
                 <div class="col-md-4">
                     <div class="icon">
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
 
                     <h5>F4, AntonyWings, Guduvancherry 603202 Tamil Nadu India</h5>
