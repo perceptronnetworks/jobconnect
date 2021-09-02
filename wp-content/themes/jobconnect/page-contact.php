@@ -58,7 +58,7 @@ get_header();
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
 
-                    <h5>F4, AntonyWings, Guduvancherry 603202 Tamil Nadu India</h5>
+                    <h5 style="color:#f9735b;">F4, AntonyWings, Guduvancherry 603202 Tamil Nadu India</h5>
 
                     <br>
                 </div>
