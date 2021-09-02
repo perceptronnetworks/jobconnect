@@ -6,7 +6,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
 <body>
-    <section class="section section-bg" id="call-to-action" style="background-image: url(wp-content/uploads/2021/09/work-stations-plus-espresso.jpg)">
+    <section class="section section-bg" id="call-to-action" style="background-image: url(/wp-content/uploads/2021/09/work-stations-plus-espresso.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
