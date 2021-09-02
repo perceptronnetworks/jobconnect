@@ -155,15 +155,6 @@ function jobconnect_custom_theme_scripts() {
     wp_enqueue_script( 'jobconnect-waypointsmin', get_template_directory_uri() . '/js/waypoints.min.js', array(), _S_VERSION, true );
 
 
-
-	wp_register_style(
-		'jobconnect-bootstrap',
-		get_theme_file_uri( '/resources/assets/src/css/bootstrap.min.css' ),
-		false,
-		_S_VERSION
-	);
-	wp_enqueue_style( 'jobconnect-bootstrap' );
-
 	wp_register_style(
 		'jobconnect-font-awesome',
 		get_theme_file_uri( '/resources/assets/src/css/font-awesome.css' ),
@@ -171,6 +162,15 @@ function jobconnect_custom_theme_scripts() {
 		_S_VERSION
 	);
 	wp_enqueue_style( 'jobconnect-font-awesome' );
+
+	
+	wp_register_style(
+		'jobconnect-bootstrap',
+		get_theme_file_uri( '/resources/assets/src/css/bootstrap.min.css' ),
+		false,
+		_S_VERSION
+	);
+	wp_enqueue_style( 'jobconnect-bootstrap' );
 
 	
 	wp_register_style(

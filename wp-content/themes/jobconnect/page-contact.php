@@ -35,7 +35,7 @@ get_header();
 
                 <div class="col-md-4">
                     <div class="icon">
-                        <i class="fa fa-phone"></i>
+                        <i class="fas fa-phone"></i>
                     </div>
 
                     <h5><a href="tel:+918310034946">+918310034946</a></h5>
@@ -45,7 +45,7 @@ get_header();
 
                 <div class="col-md-4">
                     <div class="icon">
-                        <i class="fa fa-envelope"></i>
+                        <i class="fas fa-envelope"></i>
                     </div>
 
                     <h5><a href="mailto:info@internationjobconnect.com">info@internationjobconnect.com</a></h5>
@@ -58,7 +58,7 @@ get_header();
                         <i class="fa fa-map-marker"></i>
                     </div>
 
-                    <h5>F4, AntonyWings, Guduvancherry 603202</h5>
+                    <h5>F4, AntonyWings, Guduvancherry 603202 Tamil Nadu India</h5>
 
                     <br>
                 </div>
