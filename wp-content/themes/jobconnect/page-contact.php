@@ -21,6 +21,52 @@ get_header();
         </div>
     </section>
    
+     <!-- ***** Features Item Start ***** -->
+     <section class="section" id="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>contact <em> info</em></h2>
+                        <img src="wp-content/uploads/2021/08/line-dec.png" alt="waves">
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+
+                    <h5><a href="#">+918310034946</a></h5>
+
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                    <h5><a href="#">info@internationjobconnect.com</a></h5>
+
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+
+                    <h5>F4, AntonyWings, Guduvancherry 603202</h5>
+
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Item End ***** -->
+
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us" style="margin-top: 0;">
         <div class="container-fluid">
