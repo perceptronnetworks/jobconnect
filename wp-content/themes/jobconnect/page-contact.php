@@ -73,7 +73,7 @@ get_header();
             <div class="row">
                 
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                    <div class="contact-form" style="background-image: url(/wp-content/uploads/2021/09/photo-1527348995621-e28a83bf6fb3.jpeg)">
+                    <div class="contact-form" style="background-image: url()">
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScErh0N9W2CPPf4qeTlprmMPeg5BG2so3GNYgXzLii5YP3ImA/viewform?embedded=true" width="100%" height="2200px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                 </div>
