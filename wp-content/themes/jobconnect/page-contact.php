@@ -28,7 +28,7 @@ get_header();
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
                         <h2>contact <em> info</em></h2>
-                        <img src="wp-content/uploads/2021/08/line-dec.png" alt="waves">
+                        <img src="/wp-content/uploads/2021/08/line-dec.png" alt="waves">
                         
                     </div>
                 </div>
