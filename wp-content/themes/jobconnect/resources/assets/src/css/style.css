@@ -972,6 +972,7 @@ contact
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 0px !important;
+  padding-top: 0px !important;
 }
 
 #contact-us .contact-form #contact {
